@@ -2044,11 +2044,11 @@ class MakeNFe
                 $ipiTrib,
                 "qUnid",
                 $qUnid,
-                true,
+                false,
                 "[item $nItem] Quantidade total na unidade padrão para tributação "
                 . "(somente para os produtos tributados por unidade)"
             );
-            $this->zAddChild($ipiTrib, "vUnid", $vUnid, true, "[item $nItem] Valor por Unidade Tributável");
+            $this->zAddChild($ipiTrib, "vUnid", $vUnid, false, "[item $nItem] Valor por Unidade Tributável");
             $this->zAddChild($ipiTrib, "vIPI", $vIPI, true, "[item $nItem] Valor do IPI");
             $ipi->appendChild($ipiTrib);
         } else {
